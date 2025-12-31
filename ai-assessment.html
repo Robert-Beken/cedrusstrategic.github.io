@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Security Assessment - Cedrus Strategic</title>
+    <meta name="description" content="Quantified, defensible AI risk assessment for enterprise. Covers agentic AI, prompt injection, model supply chain, and compliance with NIST AI RMF, ISO 42001, and OWASP Top 10 for LLM.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="cedrus-style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Cedrus Strategic" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ai-assessment.html" class="active">AI Security Assessment</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="mobile-nav">
+            <a href="services.html">Services</a>
+            <a href="ai-assessment.html">AI Security Assessment</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero ai-hero">
+        <div class="container">
+            <div class="hero-badge">Featured Service</div>
+            <h1>AI Security Assessment</h1>
+            <p>Traditional approaches don't cover AI. Organizations are deploying AI systems without understanding the fundamentally different risk landscape.</p>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What's at Stake</h2>
+                <p class="section-subtitle">AI systems introduce risks that traditional security assessments miss entirely</p>
+            </div>
+            
+            <div class="risks-grid">
+                <div class="risk-card">
+                    <div class="risk-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Prompt Injection Attacks</h3>
+                    <p>Chatbots manipulated to expose PHI, execute unauthorized actions, or leak proprietary data through carefully crafted inputs.</p>
+                </div>
+                
+                <div class="risk-card">
+                    <div class="risk-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3>Agentic AI Escape</h3>
+                    <p>Autonomous agents with tool access (Copilot Studio, etc.) tricked into transferring funds, sending phishing emails, or deleting records.</p>
+                </div>
+                
+                <div class="risk-card">
+                    <div class="risk-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                    </div>
+                    <h3>Supply Chain Compromise</h3>
+                    <p>Vendor models with unknown training data, backdoors, or exploitable vulnerabilities that propagate into your systems.</p>
+                </div>
+                
+                <div class="risk-card">
+                    <div class="risk-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                        </svg>
+                    </div>
+                    <h3>Compliance Violations</h3>
+                    <p>GDPR fines up to €20M or 4% of revenue. HIPAA breaches at $50K per record. AI-specific regulations emerging rapidly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why This Assessment Is Different</h2>
+            </div>
+            
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="comparison-col">Traditional Assessments</div>
+                    <div class="comparison-col highlight">This AI Security Assessment</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-col old">Vague "high/medium/low" risk metrics</div>
+                    <div class="comparison-col new">Framework quantified, observable risk scoring with decision-tree methodology</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-col old">Treats AI like any other app</div>
+                    <div class="comparison-col new"><strong>Agentic AI Focus:</strong> Explicit assessment of autonomous agents with tool access, non-linear risk areas</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-col old">Generic "vendor risk" checkbox</div>
+                    <div class="comparison-col new"><strong>Supply Chain Depth:</strong> Model provenance, MCP security, API dependencies, training data lineage</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-col old">Hand-wave "compliance frameworks"</div>
+                    <div class="comparison-col new"><strong>Specific Mapping:</strong> NIST AI RMF, ISO 42001, OWASP Top 10 for LLM, HIPAA/SOX/PCI for AI</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-col old">Ignores machine identity</div>
+                    <div class="comparison-col new"><strong>OAuth Architecture:</strong> Service principals, delegated permissions, API key lifecycle</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-col old">"Here are your gaps"</div>
+                    <div class="comparison-col new"><strong>Implementation-Ready:</strong> Reference architectures, control specs, phased roadmap</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="methodology-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Solution Roadmap</h2>
+                <p class="section-subtitle">Quantified, Defensible AI Risk Assessment in 5 Phases</p>
+            </div>
+            
+            <div class="phases-container">
+                <div class="phase-card">
+                    <div class="phase-number">01</div>
+                    <h3>Business-Aligned Risk Calibration</h3>
+                    <ul>
+                        <li>Executive workshop defining AI-specific impact levels</li>
+                        <li>Aligns security architecture to your actual risk tolerance</li>
+                        <li>Eliminates "we should protect everything equally" paralysis</li>
+                    </ul>
+                </div>
+                
+                <div class="phase-card">
+                    <div class="phase-number">02</div>
+                    <h3>Complete AI System Inventory & Risk Scoring</h3>
+                    <ul>
+                        <li>Every AI system classified using classification framework (Low/Medium/High/Critical)</li>
+                        <li>Agentic AI systems (autonomous agents) explicitly identified</li>
+                        <li>Model provenance and supply chain documented</li>
+                    </ul>
+                </div>
+                
+                <div class="phase-card">
+                    <div class="phase-number">03</div>
+                    <h3>Gap Analysis & Threat Modeling</h3>
+                    <ul>
+                        <li>AI-specific threats: prompt injection, model extraction, adversarial attacks, agent escape scenarios</li>
+                        <li>Compliance gaps: NIST AI RMF, ISO 42001, OWASP Top 10 for LLM, sector regulations</li>
+                        <li>Machine identity review: OAuth flows, service principals, delegated permissions</li>
+                    </ul>
+                </div>
+                
+                <div class="phase-card">
+                    <div class="phase-number">04</div>
+                    <h3>Reference Architecture Design</h3>
+                    <ul>
+                        <li>Risk-based control selection (control framework)</li>
+                        <li>Network segmentation strategies</li>
+                        <li>Model governance framework</li>
+                        <li>Secure AI deployment patterns</li>
+                    </ul>
+                </div>
+                
+                <div class="phase-card">
+                    <div class="phase-number">05</div>
+                    <h3>Phased Implementation Roadmap</h3>
+                    <ul>
+                        <li>Quick wins (0-3 months) → Foundation (3-6 months) → Strategic enhancements (6-12 months)</li>
+                        <li>Cost-benefit analysis with ROI projections</li>
+                        <li>Resource requirements and timeline</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deliverables Section -->
+    <section class="deliverables-section">
+        <div class="container">
+            <div class="deliverables-grid">
+                <div class="deliverable-block">
+                    <h3>Executive Narrative Report</h3>
+                    <p class="deliverable-size">50-80 pages</p>
+                    <ul>
+                        <li>Quantified risk classifications for each AI system reviewed</li>
+                        <li>AI-specific threat scenarios with business impact</li>
+                        <li>Compliance crosswalk matrices (NIST, ISO, OWASP, sector-specific)</li>
+                        <li>Reference architectures for secure AI deployment</li>
+                        <li>Phased implementation roadmap with cost-benefit analysis</li>
+                    </ul>
+                </div>
+                
+                <div class="deliverable-block">
+                    <h3>Executive Presentation</h3>
+                    <p class="deliverable-size">Board/C-suite ready</p>
+                    <ul>
+                        <li>Visual risk heatmaps and key findings</li>
+                        <li>Clear, actionable recommendations</li>
+                        <li>Budget and timeline proposals</li>
+                        <li>Strategic context for leadership decisions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Urgency Section -->
+    <section class="urgency-section">
+        <div class="container">
+            <div class="urgency-content">
+                <h2>The Bottom Line</h2>
+                <p>Every day without understanding your AI security posture increases risk exposure.</p>
+                <p>Attackers are perfecting prompt injection techniques. Regulators are developing AI-specific enforcement actions. Autonomous agents have access to sensitive systems with inadequate controls.</p>
+                <div class="urgency-questions">
+                    <p><strong>You need to know:</strong></p>
+                    <ul>
+                        <li>Which AI systems pose the greatest risk (and why)</li>
+                        <li>Where your critical security gaps are</li>
+                        <li>How to deploy AI securely under good governance while maintaining business velocity</li>
+                    </ul>
+                </div>
+                <p class="urgency-conclusion">This assessment delivers those answers in 6-12 weeks with quantified, defensible, implementation-ready recommendations.</p>
+                <a href="contact.html" class="btn-primary">Start the Conversation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Cedrus Strategic" class="footer-logo">
+                </div>
+                <div class="footer-links">
+                    <a href="services.html">Services</a>
+                    <a href="ai-assessment.html">AI Assessment</a>
+                    <a href="research.html">Research</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2025 Cedrus Strategic LLC. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cedrus-scripts.js"></script>
+</body>
+</html>

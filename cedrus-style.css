@@ -574,7 +574,9 @@ nav {
 /* ==================== SERVICES NAV ==================== */
 .services-nav {
     padding: 20px 0;
-    background: var(--bg-card);
+    background: rgba(10, 20, 32, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-subtle);
     position: sticky;
     top: 75px;

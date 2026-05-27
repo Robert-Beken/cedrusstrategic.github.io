@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity & Trust Infrastructure - Cedrus Strategic</title>
+    <meta name="description" content="PKI architecture, certificate lifecycle management, HSM strategy, and machine identity—assessed first, then remediated, deployed, and operationalized. Architecture-first, platform-agnostic consulting for regulated enterprises.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="cedrus-style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Cedrus Strategic" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="identity-trust.html" class="active">Identity &amp; Trust</a></li>
+                <li><a href="ai-assessment.html">AI Security</a></li>
+                <li><a href="services.html">Security Program</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="mobile-nav">
+            <a href="identity-trust.html">Identity &amp; Trust</a>
+            <a href="ai-assessment.html">AI Security</a>
+            <a href="services.html">Security Program</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero ai-hero">
+        <div class="container">
+            <div class="hero-badge">Core Practice</div>
+            <h1>Identity &amp; Trust Infrastructure</h1>
+            <p>Certificates, keys, and machine identities are the infrastructure holding your digital trust together&mdash;and it is under more pressure than most organizations realize. We assess the foundation before anyone deploys a platform on top of it.</p>
+        </div>
+    </section>
+
+    <!-- Philosophy / Thesis -->
+    <section class="philosophy-section">
+        <div class="container">
+            <div class="philosophy-content">
+                <h2>Vendor jumpstarts deploy a tool. They don&rsquo;t deliver a program.</h2>
+                <p>Most certificate-lifecycle problems are diagnosed as tooling problems. They are usually architecture problems wearing a tooling costume. A certificate-management platform deployed on top of a failing certificate authority does not fix the authority&mdash;it automates the failure and bills for it monthly.</p>
+                <p>Vendor professional services install and configure the platform, cover a handful of representative use cases, and exit at the contracted handoff. That is what they are paid to do. But PKI architecture, governance, migration sequencing, integration, and the operational long tail sit outside that scope&mdash;and that is where most CLM programs stall and quietly become shelfware. Sometimes the right next step isn&rsquo;t CLM at all. It&rsquo;s the PKI underneath.</p>
+                <p>Cedrus Strategic delivers the architecture, governance, and program work that vendor PS doesn&rsquo;t&mdash;with or without a jumpstart in flight, and always assessment-first.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Crypto Surface / Dark Inventory -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Trust Surface Is Bigger Than Your Certificates</h2>
+                <p class="section-subtitle">A typical discovery scan finds 30&ndash;40% more certificates than the documented inventory&mdash;and certificates are only the visible tip.</p>
+            </div>
+
+            <div class="risks-grid">
+                <div class="risk-card">
+                    <div class="risk-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3>Certificates &amp; the Trust Chain</h3>
+                    <p>TLS, code-signing, S/MIME, client-auth, device, and IoT certificates. Break any link&mdash;expired cert, revoked intermediate, untrusted root&mdash;and the session fails. An instant P1.</p>
+                </div>
+
+                <div class="risk-card">
+                    <div class="risk-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/>
+                        </svg>
+                    </div>
+                    <h3>SSH Keys</h3>
+                    <p>The invisible privileged-access layer. No expiry enforcement, no central inventory&mdash;keys provisioned years ago by staff long gone remain silently active. An unrotated key is a standing backdoor.</p>
+                </div>
+
+                <div class="risk-card">
+                    <div class="risk-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M5 13l4 4L19 7M5 7h.01M5 17h.01"/>
+                        </svg>
+                    </div>
+                    <h3>HSM &amp; Key Custody</h3>
+                    <p>Hardware security module architecture, root-key protection, backup-HSM recovery paths, and key-ceremony design&mdash;aligned to sensitivity tier and FIPS 140-2/3 obligations.</p>
+                </div>
+
+                <div class="risk-card">
+                    <div class="risk-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                    </div>
+                    <h3>Static &amp; Symmetric Crypto</h3>
+                    <p>TDE database keys, disk and backup encryption, KMS and Vault secrets, API and OAuth client secrets&mdash;managed in silos, rarely rotated, and usually outside any certificate-governance view.</p>
+                </div>
+
+                <div class="risk-card">
+                    <div class="risk-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 6h16M4 12h16M4 18h16M7 6v12m10-12v12"/>
+                        </svg>
+                    </div>
+                    <h3>Network Segmentation</h3>
+                    <p>Zone-and-conduit architecture, microsegmentation, and identity ringfencing. Segmentation is the network expression of the same question: who is allowed to reach whom, and can they prove it.</p>
+                </div>
+
+                <div class="risk-card">
+                    <div class="risk-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Machine &amp; Non-Human Identity</h3>
+                    <p>Service principals, workload credentials, and the agentic and OAuth-driven identities now multiplying fastest. Issuance, scope, and lifecycle&mdash;architected, not improvised.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Four-Phase Path (SPINE) -->
+    <section class="methodology-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Engagement Path: Assess First, Fix the Foundation, Then Deploy</h2>
+                <p class="section-subtitle">A menu and a sequence&mdash;not a single fixed commitment. Each phase has independent value and its own go / no-go decision gate.</p>
+            </div>
+
+            <div class="phases-container">
+                <div class="phase-card">
+                    <div class="phase-number">01</div>
+                    <div>
+                        <h3>Assess &mdash; PKI Architecture Health Check</h3>
+                        <ul>
+                            <li>A discrete, time-boxed, fixed-fee entry point and the de-risking step</li>
+                            <li>Certificate inventory, CA health, hygiene audit, and workload-mix risk</li>
+                            <li>HSM posture, root-key protection, and CP/CPS currency reviewed</li>
+                            <li><strong>Output:</strong> findings, a prioritized roadmap, and an informed read on platform fit</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <div class="phase-number">02</div>
+                    <div>
+                        <h3>Remediate &mdash; Redesign &amp; Rebuild</h3>
+                        <ul>
+                            <li>The variable phase&mdash;scoped by what the assessment actually found</li>
+                            <li>Light: hygiene fixes, separating commingled workloads, wildcards to SANs</li>
+                            <li>Heavy: three-tier rebuild, offline root, HSM-anchored issuing CAs, runbooks</li>
+                            <li><strong>Output:</strong> a sound PKI ready to carry a CLM platform</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <div class="phase-number">03</div>
+                    <div>
+                        <h3>Deploy &mdash; CLM Jumpstart Wrap &amp; Overwatch</h3>
+                        <ul>
+                            <li>The CLM vendor runs the jumpstart; we run the architecture around it</li>
+                            <li>Architectural overlay, use-case mapping, and deployment course-correction</li>
+                            <li>Delivered on retainer&mdash;the pace is set by the vendor&rsquo;s schedule, not ours</li>
+                            <li><strong>Output:</strong> CLM deployed correctly on a sound foundation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <div class="phase-number">04</div>
+                    <div>
+                        <h3>Operate &mdash; Operationalization &amp; Handoff</h3>
+                        <ul>
+                            <li>Where a tool deployment becomes a working program</li>
+                            <li>The long-tail use cases the jumpstart never reached</li>
+                            <li>Integration to internal PKI, HSMs, and ITSM; program institutionalization</li>
+                            <li><strong>Output:</strong> a self-sustaining certificate program&mdash;not shelfware</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- From the Field -->
+    <section class="service-detail alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>From the Field</h2>
+            </div>
+            <div class="sidebar-card highlight">
+                <div class="service-label">Why the Assessment Comes First</div>
+                <p style="color: var(--text-secondary); margin-bottom: 0;">On a healthcare client&rsquo;s CLM jumpstart kickoff call, the AD CS database had grown to roughly 80 GB before anyone outside the team running it had looked at it&mdash;a single database-backed authority serving both long-lived workload certificates and high-volume short-lived ephemeral issuance, compounding for years. The jumpstart paused. PKI architectural intervention came first, because a certificate-management platform deployed on top of a failing authority multiplies cost rather than value&mdash;it would simply have driven more issuance through the same failing core. Teetering PKI turns up at every organization size, and a vendor kickoff call is one of the most common places it surfaces.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Gap We Fill -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Where Jumpstart-Only Engagements Stall</h2>
+                <p class="section-subtitle">The platform stands up. The program never gets built.</p>
+            </div>
+
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="comparison-col">Vendor Jumpstart Covers</div>
+                    <div class="comparison-col highlight">Cedrus Strategic Covers</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-col old">Platform install and base configuration</div>
+                    <div class="comparison-col new"><strong>Foundation First:</strong> PKI architecture review and remediation before the platform sits on it</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-col old">A handful of representative use cases</div>
+                    <div class="comparison-col new"><strong>The Long Tail:</strong> full use-case inventory and affinity grouping&mdash;where most certificates actually live</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-col old">Connector / agent deployment, admin training</div>
+                    <div class="comparison-col new"><strong>Integration:</strong> internal PKI, HSMs, and ITSM connected and finished, not left at handoff</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-col old">Hand-off documentation for the platform</div>
+                    <div class="comparison-col new"><strong>Key Governance:</strong> HSM and backup-HSM runbooks, CP/CPS authoring, root-rekey planning</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-col old">One vendor&rsquo;s platform</div>
+                    <div class="comparison-col new"><strong>Platform-Agnostic:</strong> risk-tiered migration plans with rollback and a vendor-honest selection rationale</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scope drivers + delivery -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-content">
+                    <div class="service-label">What Drives Scope</div>
+                    <h2>Complexity, not headcount</h2>
+                    <p class="service-intro">Engagements are sized during scoping by architectural complexity&mdash;not a fixed week count that large-organization projects never honor anyway. Budget the assessment firmly; budget the rest in ranges, after the assessment tells everyone what the program actually needs to be.</p>
+                    <div class="service-features">
+                        <div class="feature">
+                            <h4>Internal PKI Health &amp; Age</h4>
+                            <p>AD CS, EJBCA, or Vault PKI; database backend and size; last architecture review; recent operational issues.</p>
+                        </div>
+                        <div class="feature">
+                            <h4>Certificate Volume &amp; Workload Mix</h4>
+                            <p>Count, growth trajectory, and whether long-lived workload and short-lived ephemeral certs share one CA.</p>
+                        </div>
+                        <div class="feature">
+                            <h4>HSM Posture</h4>
+                            <p>Current deployment, root-key protection, backup-HSM strategy, FIPS 140-2/3 obligations, planned refresh.</p>
+                        </div>
+                        <div class="feature">
+                            <h4>CA Hierarchy Complexity</h4>
+                            <p>Single, two-tier, multi-CA, cross-forest, split-horizon for OT or partner trust, recent M&amp;A integration.</p>
+                        </div>
+                        <div class="feature">
+                            <h4>Regulatory &amp; Audit Obligations</h4>
+                            <p>HIPAA, HITECH, PCI, SOX, NERC-CIP, FedRAMP, ISO 27001; audit cadence; CP/CPS currency.</p>
+                        </div>
+                        <div class="feature">
+                            <h4>Substrate Mix</h4>
+                            <p>IT, OT, cloud, and SaaS&mdash;each issues and consumes trust differently.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-detail-sidebar">
+                    <div class="sidebar-card">
+                        <h4>Delivery Model</h4>
+                        <ul>
+                            <li>Assessment fixed-fee; later phases project or monthly retainer</li>
+                            <li>Architecture and program layers&mdash;above the tool-configuration layer</li>
+                            <li>Implementation delivered through established partners</li>
+                            <li>A decision gate between every phase&mdash;stop, pause, or hand off at any point</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-card highlight">
+                        <h4>Platform-Agnostic</h4>
+                        <p>Architecture independent of any single vendor. Experience across Venafi/CyberArk, Keyfactor, Sectigo SCM, AppViewX, and DigiCert TLM at the CLM layer, and Thales at the HSM layer&mdash;selecting the right fit for your environment, not a preferred SKU.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Now / Forcing Functions -->
+    <section class="urgency-section">
+        <div class="container">
+            <div class="urgency-content">
+                <h2>Why This Is Urgent Now</h2>
+                <p>Two external forcing functions are compressing the runway&mdash;and the first one has already started.</p>
+                <div class="urgency-questions">
+                    <p><strong>The pressure is converging:</strong></p>
+                    <ul>
+                        <li><strong>Shrinking certificate lifespans.</strong> Under the CA/Browser Forum&rsquo;s 2025 mandate, maximum public-TLS validity steps down from 398 days to roughly 200 in 2026, 100 in 2027, and 47 by 2029&mdash;and major CAs began issuing sub-200-day certificates in early 2026. At 47 days, an estate of 100 certificates means a renewal every business day. Manual management ends; automation depends on a sound authority underneath.</li>
+                        <li><strong>Post-quantum migration.</strong> NIST finalized its post-quantum standards (ML-KEM and ML-DSA) in August 2024. Crypto-agility is a present-tense architecture decision, not a future project&mdash;and &ldquo;harvest now, decrypt later&rdquo; means long-horizon data is already exposed.</li>
+                        <li><strong>Regulatory pressure.</strong> Healthcare and other regulated sectors increasingly expect demonstrable certificate governance and machine-identity discipline&mdash;the trust fabric is becoming an audit obligation, not just a best practice.</li>
+                    </ul>
+                </div>
+                <p class="urgency-conclusion">The validity mandate governs public TLS certificates directly&mdash;but the automation it forces only works on a PKI that can carry it. An organization that cannot inventory and rotate its certificates today cannot meet any of these deadlines. The architecture work is the prerequisite for all of them.</p>
+                <a href="contact.html" class="btn-primary">Start with an Assessment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Is your certificate authority quietly under load?</h2>
+                <p>Database growth, issuance latency, an approaching CA or root expiry, an HSM refresh, or a CLM platform purchase in flight&mdash;any one is a reason to look at the foundation before it forces the timing for you. The assessment is the cheapest insurance in the program.</p>
+                <a href="contact.html" class="btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Cedrus Strategic" class="footer-logo">
+                </div>
+                <div class="footer-links">
+                    <a href="identity-trust.html">Identity &amp; Trust</a>
+                    <a href="ai-assessment.html">AI Security</a>
+                    <a href="services.html">Security Program</a>
+                    <a href="research.html">Research</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Cedrus Strategic LLC. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cedrus-scripts.js"></script>
+</body>
+</html>
